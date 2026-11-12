@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-fixed-variant": "#574049", "outline": "#7b7583", "surface-dim": "#e9d1fe", "background": "#fff7ff", "on-tertiary-fixed": "#211634", "inverse-on-surface": "#f9ecff", "on-secondary-container": "#755c65", "surface-container-low": "#fbf0ff", "surface-container": "#f7e9ff", "primary-fixed": "#eaddff", "surface-container-lowest": "#ffffff", "secondary-fixed": "#fbdae5", "outline-variant": "#cbc3d3", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#4d4162", "surface-container-high": "#f3e2ff", "on-secondary": "#ffffff", "surface-container-highest": "#efdbff", "surface-bright": "#fff7ff", "on-primary-container": "#f8efff", "tertiary-fixed-dim": "#d0bfe7", "secondary-fixed-dim": "#debec9", "tertiary": "#5d5072", "on-primary-fixed": "#25005a", "on-background": "#241436", "inverse-surface": "#3a294c", "on-error-container": "#93000a", "on-surface": "#241436", "on-primary-fixed-variant": "#533294", "surface-tint": "#6b4bad", "on-tertiary": "#ffffff", "secondary": "#705861", "on-secondary-fixed": "#28161e", "on-tertiary-container": "#f8efff", "on-primary": "#ffffff", "error": "#ba1a1a", "on-surface-variant": "#494551", "surface-variant": "#efdbff", "primary": "#6343a4", "surface": "#fff7ff", "primary-fixed-dim": "#d2bcff", "tertiary-container": "#76688b", "error-container": "#ffdad6", "primary-container": "#7c5cbf", "secondary-container": "#f8d7e2", "tertiary-fixed": "#ecdcff", "inverse-primary": "#d2bcff" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-xl": "2.5rem", "space-md": "1rem", "gutter": "1rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "margin": "2rem", "margin-mobile": "1.25rem", "space-sm": "0.5rem" }, fontFamily: { "label-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Playfair Display"], "headline-sm": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "headline-lg": ["Playfair Display"], "label-sm": ["Plus Jakarta Sans"], "display-lg": ["Playfair Display"] }, fontSize: { "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600"}], "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "500"}], "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}], "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}], "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500"}], "display-lg": ["44px", {"lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "500"}] } } } }</script><style>@layer base { html, body { min-height: 100%; margin: 0; padding: 0; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24; } }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(59,42,77,0.03)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Ti Pas Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrB-6Ny9utHz5Sb35Z_Itjj00WNQ656P84d3P5c1DcAcR9FZfDLOhfIUqsBAKlTYUC0eFNhuiufoxSwnojdMhyMZoRTVKgp6YIi7c9WMXKDJF5c2A8WxuWaVdNENMeRtOzHkqN216mDfnL0O6WEHWpUmQKhGhyuwmOgpOrjkd4zp-_C8aMjmlSH46a7m81sd4UzIF9LSUw0DXLFIMUUetlBz_We0yPe2ILs3nx9tNF3bgA"/><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Ti Pas</span><span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Moris</span></div></div><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline">Trail</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-24 px-gutter"><div class="flex flex-col w-full max-w-md mx-auto pb-12">
+<!-- Top Bar / Sub-header Greeting -->
+<header class="flex flex-col gap-space-sm pt-2 pb-space-lg px-gutter">
+<div class="flex items-center justify-between gap-space-sm">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider">
+        Santye Ti Pas • Moris
+      </span>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">footprint</span>
+<span class="font-label-md text-label-md">8 / 17 steps taken</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-sm mt-1">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[18px]">nature</span>
+</div>
+<div class="flex flex-col">
+<h1 class="font-headline-sm text-headline-sm text-on-surface leading-tight">
+            Bonzour!
+          </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Today's step is about being kind to our oceans and coasts. Take a gentle breath and find your stone below.
+          </p>
+</div>
+</div>
+</div>
+</header>
+<!-- Organic Stepping Stone Trail Canvas -->
+<section aria-label="17 SDG Stepping Stones Trail" class="relative w-full px-gutter min-h-[1950px]">
+<!-- Hand-drawn style meandering SVG path line -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none z-0" fill="none" preserveaspectratio="none" stroke-linecap="round" viewbox="0 0 380 1950">
+<!-- Completed Trailing Line (Stones 1 -> 8) -->
+<path class="stroke-primary-container" d="M 80 50
+               C 80 85, 290 120, 290 160
+               C 290 200, 100 235, 100 275
+               C 100 315, 280 350, 280 390
+               C 280 430, 95 465, 95 505
+               C 95 545, 275 580, 275 620
+               C 275 660, 100 695, 100 735
+               C 100 775, 190 815, 190 870" stroke-dasharray="6 6" stroke-width="3"></path>
+<!-- Future / Locked Dotted Path Line (Stones 8 -> 17) -->
+<path class="stroke-outline-variant" d="M 190 870
+               C 190 920, 285 965, 285 1010
+               C 285 1060, 95 1105, 95 1150
+               C 95 1195, 280 1240, 280 1285
+               C 280 1330, 100 1375, 100 1420
+               C 100 1465, 275 1510, 275 1555
+               C 275 1600, 95 1645, 95 1690
+               C 95 1735, 280 1780, 280 1825
+               C 280 1865, 100 1905, 100 1945
+               C 100 1960, 190 1970, 190 1980" stroke-dasharray="4 6" stroke-width="2.5"></path>
+</svg>
+<div class="relative z-10 flex flex-col w-full">
+<!-- Stone 1 (Completed) - Left -->
+<div class="relative flex items-center justify-start h-[110px] pl-4">
+<div class="flex items-center gap-space-sm group">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary shadow-sm flex flex-col items-center justify-center shrink-0">
+<span class="font-label-sm text-label-sm font-semibold opacity-90">SDG 12</span>
+<span class="material-symbols-outlined text-[16px] leading-none mt-0.5">check</span>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-DEFAULT max-w-[210px] shadow-sm">
+<span class="font-label-sm text-label-sm text-secondary block font-semibold">Step 1 • Completed</span>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2">Bring a reusable bag to the market in Port Louis</p>
+</div>
+</div>
+</div>
+<!-- Stone 2 (Completed) - Right -->
+<div class="relative flex items-center justify-end h-[115px] pr-4">
+<div class="flex items-center flex-row-reverse gap-space-sm group text-right">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary shadow-sm flex flex-col items-center justify-center shrink-0">
+<span class="font-label-sm text-label-sm font-semibold opacity-90">SDG 6</span>
+<span class="material-symbols-outlined text-[16px] leading-none mt-0.5">check</span>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-DEFAULT max-w-[210px] shadow-sm text-left">
+<span class="font-label-sm text-label-sm text-secondary block font-semibold">Step 2 • Completed</span>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2">Refill your water bottle at home</p>
+</div>
+</div>
+</div>
+<!-- Stone 3 (Completed) - Left -->
+<div class="relative flex items-center justify-start h-[115px] pl-7">
+<div class="flex items-center gap-space-sm group">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary shadow-sm flex flex-col items-center justify-center shrink-0">
+<span class="font-label-sm text-label-sm font-semibold opacity-90">SDG 2</span>
+<span class="material-symbols-outlined text-[16px] leading-none mt-0.5">check</span>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-DEFAULT max-w-[200px] shadow-sm">
+<span class="font-label-sm text-label-sm text-secondary block font-semibold">Step 3 • Completed</span>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2">Buy vegetables from a local seller at Vacoas market</p>
+</div>
+</div>
+</div>
+<!-- Stone 4 (Completed) - Right -->
+<div class="relative flex items-center justify-end h-[115px] pr-6">
+<div class="flex items-center flex-row-reverse gap-space-sm group text-right">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary shadow-sm flex flex-col items-center justify-center shrink-0">
+<span class="font-label-sm text-label-sm font-semibold opacity-90">SDG 14</span>
+<span class="material-symbols-outlined text-[16px] leading-none mt-0.5">check</span>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-DEFAULT max-w-[205px] shadow-sm text-left">
+<span class="font-label-sm text-label-sm text-secondary block font-semibold">Step 4 • Completed</span>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2">Pick up 10 pieces of litter on your next beach walk</p>
+</div>
+</div>
+</div>
+<!-- Stone 5 (Completed) - Left -->
+<div class="relative flex items-center justify-start h-[115px] pl-6">
+<div class="flex items-center gap-space-sm group">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary shadow-sm flex flex-col items-center justify-center shrink-0">
+<span class="font-label-sm text-label-sm font-semibold opacity-90">SDG 3</span>
+<span class="material-symbols-outlined text-[16px] leading-none mt-0.5">check</span>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-DEFAULT max-w-[205px] shadow-sm">
+<span class="font-label-sm text-label-sm text-secondary block font-semibold">Step 5 • Completed</span>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2">Check in on an elderly neighbour with a visit or call</p>
+</div>
+</div>
+</div>
+<!-- Stone 6 (Completed) - Right -->
+<div class="relative flex items-center justify-end h-[115px] pr-7">
+<div class="flex items-center flex-row-reverse gap-space-sm group text-right">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary shadow-sm flex flex-col items-center justify-center shrink-0">
+<span class="font-label-sm text-label-sm font-semibold opacity-90">SDG 4</span>
+<span class="material-symbols-outlined text-[16px] leading-none mt-0.5">check</span>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-DEFAULT max-w-[205px] shadow-sm text-left">
+<span class="font-label-sm text-label-sm text-secondary block font-semibold">Step 6 • Completed</span>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2">Spend 20 minutes helping a younger cousin with homework</p>
+</div>
+</div>
+</div>
+<!-- Stone 7 (Completed) - Left -->
+<div class="relative flex items-center justify-start h-[115px] pl-6">
+<div class="flex items-center gap-space-sm group">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary shadow-sm flex flex-col items-center justify-center shrink-0">
+<span class="font-label-sm text-label-sm font-semibold opacity-90">SDG 15</span>
+<span class="material-symbols-outlined text-[16px] leading-none mt-0.5">check</span>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-DEFAULT max-w-[210px] shadow-sm">
+<span class="font-label-sm text-label-sm text-secondary block font-semibold">Step 7 • Completed</span>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2">Plant one herb in a pot at home</p>
+</div>
+</div>
+</div>
+<!-- Stone 8 (CURRENT STEP - ACTIVE) - Centered & Featured -->
+<div class="relative flex flex-col items-center justify-center my-6 py-4">
+<!-- Floating Pulsing Ripple Element -->
+<div class="relative flex items-center justify-center">
+<div class="absolute w-24 h-24 rounded-full bg-secondary-container opacity-40 animate-ping"></div>
+<div class="w-20 h-20 rounded-full bg-secondary-container shadow-md flex flex-col items-center justify-center relative z-10 cursor-pointer transform active:scale-95 transition-transform">
+<div class="w-16 h-16 rounded-full bg-surface flex flex-col items-center justify-center shadow-inner">
+<span class="font-label-sm text-label-sm text-primary font-bold">SDG 5</span>
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">spa</span>
+</div>
+</div>
+</div>
+<!-- Prominent Action Card for Step 8 -->
+<div class="w-full bg-surface-container rounded-lg p-space-md shadow-md mt-4 flex flex-col gap-space-xs text-center items-center">
+<div class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-primary text-on-primary text-[11px] font-label-sm font-semibold tracking-wide">
+<span class="material-symbols-outlined text-[14px]">wb_sunny</span>
+<span>TODAY'S STEP</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+            Gender Equality
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+            Message a girl in your life and encourage her to pursue something she loves.
+          </p>
+<button class="mt-2 w-full py-3 px-6 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm hover:opacity-95 active:scale-98 transition-all flex items-center justify-center gap-2" type="button">
+<span>Reflect &amp; Mark Complete</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Stone 9 (Locked) - Right -->
+<div class="relative flex items-center justify-end h-[105px] pr-7 opacity-75">
+<div class="flex items-center flex-row-reverse gap-space-sm group text-right">
+<div class="w-12 h-12 rounded-full bg-surface-container-low text-on-surface-variant flex flex-col items-center justify-center shrink-0 shadow-sm">
+<span class="font-label-sm text-label-sm font-semibold">9</span>
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-DEFAULT max-w-[195px] shadow-sm text-left">
+<span class="font-label-sm text-label-sm text-outline block">SDG 7</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Affordable &amp; Clean Energy</p>
+</div>
+</div>
+</div>
+<!-- Stone 10 (Locked) - Left -->
+<div class="relative flex items-center justify-start h-[105px] pl-6 opacity-75">
+<div class="flex items-center gap-space-sm group">
+<div class="w-12 h-12 rounded-full bg-surface-container-low text-on-surface-variant flex flex-col items-center justify-center shrink-0 shadow-sm">
+<span class="font-label-sm text-label-sm font-semibold">10</span>
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-DEFAULT max-w-[195px] shadow-sm">
+<span class="font-label-sm text-label-sm text-outline block">SDG 8</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Decent Work &amp; Economic Growth</p>
+</div>
+</div>
+</div>
+<!-- Stone 11 (Locked) - Right -->
+<div class="relative flex items-center justify-end h-[105px] pr-6 opacity-75">
+<div class="flex items-center flex-row-reverse gap-space-sm group text-right">
+<div class="w-12 h-12 rounded-full bg-surface-container-low text-on-surface-variant flex flex-col items-center justify-center shrink-0 shadow-sm">
+<span class="font-label-sm text-label-sm font-semibold">11</span>
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-DEFAULT max-w-[195px] shadow-sm text-left">
+<span class="font-label-sm text-label-sm text-outline block">SDG 9</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Industry, Innovation &amp; Infrastructure</p>
+</div>
+</div>
+</div>
+<!-- Stone 12 (Locked) - Left -->
+<div class="relative flex items-center justify-start h-[105px] pl-7 opacity-75">
+<div class="flex items-center gap-space-sm group">
+<div class="w-12 h-12 rounded-full bg-surface-container-low text-on-surface-variant flex flex-col items-center justify-center shrink-0 shadow-sm">
+<span class="font-label-sm text-label-sm font-semibold">12</span>
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-DEFAULT max-w-[195px] shadow-sm">
+<span class="font-label-sm text-label-sm text-outline block">SDG 10</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Reduced Inequalities</p>
+</div>
+</div>
+</div>
+<!-- Stone 13 (Locked) - Right -->
+<div class="relative flex items-center justify-end h-[105px] pr-7 opacity-75">
+<div class="flex items-center flex-row-reverse gap-space-sm group text-right">
+<div class="w-12 h-12 rounded-full bg-surface-container-low text-on-surface-variant flex flex-col items-center justify-center shrink-0 shadow-sm">
+<span class="font-label-sm text-label-sm font-semibold">13</span>
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-DEFAULT max-w-[195px] shadow-sm text-left">
+<span class="font-label-sm text-label-sm text-outline block">SDG 11</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Sustainable Cities &amp; Communities</p>
+</div>
+</div>
+</div>
+<!-- Stone 14 (Locked) - Left -->
+<div class="relative flex items-center justify-start h-[105px] pl-6 opacity-75">
+<div class="flex items-center gap-space-sm group">
+<div class="w-12 h-12 rounded-full bg-surface-container-low text-on-surface-variant flex flex-col items-center justify-center shrink-0 shadow-sm">
+<span class="font-label-sm text-label-sm font-semibold">14</span>
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-DEFAULT max-w-[195px] shadow-sm">
+<span class="font-label-sm text-label-sm text-outline block">SDG 13</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Climate Action for Small Islands</p>
+</div>
+</div>
+</div>
+<!-- Stone 15 (Locked) - Right -->
+<div class="relative flex items-center justify-end h-[105px] pr-6 opacity-75">
+<div class="flex items-center flex-row-reverse gap-space-sm group text-right">
+<div class="w-12 h-12 rounded-full bg-surface-container-low text-on-surface-variant flex flex-col items-center justify-center shrink-0 shadow-sm">
+<span class="font-label-sm text-label-sm font-semibold">15</span>
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-DEFAULT max-w-[195px] shadow-sm text-left">
+<span class="font-label-sm text-label-sm text-outline block">SDG 16</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Peace, Justice &amp; Strong Institutions</p>
+</div>
+</div>
+</div>
+<!-- Stone 16 (Locked) - Left -->
+<div class="relative flex items-center justify-start h-[105px] pl-7 opacity-75">
+<div class="flex items-center gap-space-sm group">
+<div class="w-12 h-12 rounded-full bg-surface-container-low text-on-surface-variant flex flex-col items-center justify-center shrink-0 shadow-sm">
+<span class="font-label-sm text-label-sm font-semibold">16</span>
+<span class="material-symbols-outlined text-[14px]">lock</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-DEFAULT max-w-[195px] shadow-sm">
+<span class="font-label-sm text-label-sm text-outline block">SDG 17</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Partnerships for the Goals</p>
+</div>
+</div>
+</div>
+<!-- Stone 17 (Locked) - Center Final -->
+<div class="relative flex flex-col items-center justify-center pt-6 opacity-75">
+<div class="w-14 h-14 rounded-full bg-surface-container-low text-on-surface-variant flex flex-col items-center justify-center shadow-sm">
+<span class="font-label-sm text-label-sm font-semibold">17</span>
+<span class="material-symbols-outlined text-[16px]">lock</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-DEFAULT max-w-[200px] shadow-sm text-center mt-2">
+<span class="font-label-sm text-label-sm text-outline block">SDG 1</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">No Poverty</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Trail Footnote / Human Island Wisdom -->
+<div class="mt-8 px-gutter text-center">
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-sm">
+<p class="font-headline-sm text-headline-sm text-on-surface italic">
+        “Ti pa, ti pa, zwazo fer so nik.”
+      </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+        Little by little, the bird builds its nest. Every small step roots our island in resilience.
+      </p>
+</div>
+</div>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(59,42,77,0.04)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 max-w-md mx-auto px-gutter"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-sm transition-colors text-primary-container font-semibold" data-path="trail" href="#"><span class="material-symbols-outlined text-[24px]">conversion_path</span><span class="font-label-sm text-label-sm mt-0.5">Trail</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="todays-step" href="#"><span class="material-symbols-outlined text-[24px]">wb_sunny</span><span class="font-label-sm text-label-sm mt-0.5">Today's Step</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="my-garden" href="#"><span class="material-symbols-outlined text-[24px]">potted_plant</span><span class="font-label-sm text-label-sm mt-0.5">My Garden</span></a></div></nav></body></html>
